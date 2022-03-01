@@ -57,13 +57,9 @@ class App extends Component {
     const m = Math.floor(t / 60);
     const mm = m % 60;
     const hh = Math.floor(mm / 60);
-    console.log(ss);
-    console.log(m);
-    console.log(mm);
-    console.log(hh);
     const z = (num) => {
       const s = "00" + String(num);
-      return s.substring(s.length - 2, 2);
+      return s.substring(s.length - 2);
     };
     return (
       <span>
